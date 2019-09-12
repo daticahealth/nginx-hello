@@ -3,6 +3,7 @@ FROM nginx:mainline-alpine
 # Changes:
 #  - create/chown files that need to be modified by nginx as nginx user
 #  - copied nginx.conf from original container, removed user declaration as it is redundant when running container as nginx
+#  - set user as nginx on image
 
 RUN rm /etc/nginx/conf.d/* && \
     touch /var/run/nginx.pid && \

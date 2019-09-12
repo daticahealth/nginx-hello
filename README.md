@@ -7,9 +7,9 @@ The images are uploaded to Docker Hub -- https://hub.docker.com/r/datica/nginx-h
 
 How to run:
 ```
-$ docker run -P -d datica/nginx-hello
+$ docker run -p 8080:8080 -d datica/nginx-hello
 ```
 
-Now, assuming we found out the IP address and the port that mapped to port 80 on the container, in a browser we can make a request to the webserver and get the page below: ![hello](hello.png)
+Now, assuming we found out the IP address and the port that mapped to port 8080 on the container, in a browser we can make a request to the webserver and get the page below: ![hello](hello.png)
 
 The images were created to be used as simple backends for various load balancing demos.
