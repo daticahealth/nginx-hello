@@ -14,3 +14,5 @@ ADD hello.conf /etc/nginx/conf.d/
 ADD index.html /usr/share/nginx/html/
 
 USER nginx
+
+# Copyright 2016, 2019 pleshakov, Datica Health Inc.
